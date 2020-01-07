@@ -1,0 +1,102 @@
+<!Doctype html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefolie</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="btn-group">
+            <a id="btn1" href="index.html" role="button">Forside</a>
+            <a id="btn2" role="button" href="web.html">Web</a>
+            <a id="btn3" role="button" href="ux_data.html">UX</a>
+            <a id="btn4" role="button" href="animation_assets.html">Animation</a>
+            <a id="btn5" role="button" href="indhold_redesign.html">Indhold</a>
+            <a id="btn6" role="button" href="om.html">Om</a>
+        </div>
+
+        <div class="btn-group3">
+            <a id="btn3_1" role="button" href="animation_assets.html">Assets</a>
+            <a id="btn3_2" role="button" href="animation_opg.html">Animation</a>
+            <a id="btn3_3" role="button" href="animation_billeddeling.html">Billeddeling</a>
+        </div>
+    </header>
+
+    <div id="position">
+        <section id="intro" class="animation_opg">
+            <div class="sectionwrapper">
+                <div class="col">
+                    <h1>Animations-opgaven</h1>
+                    <p>I animationsopgaven skulle vi kode et spil, der indeholdt det artwork vi designede i sidste øvelse. Her blev vi introduceret til et 3. programmeringssprog; JavaScript, der hovedsageligt bruges til at gøre ting interaktive dvs. gøre det muligt at trykke på spillets forskellige ellementer eller få noget til at ske når noget andet er færdigt. Vi arbejdede desuden videre med sproget CSS og blev introduceret til CSS animationer, som vi benytter til at få ting til at bevæge sig i spillet. <br>
+                        Til opbygningen af spillet blev vi introduceret til aktivitetsdiagrammer og state machine diagrammer, der bruges til at skabe overblik over hvad man ønsker spillet skal gøre og hvordan det derefter skal kodes.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="eksempler/animation/assets_.png" alt="Spillets start skærm">
+                </div>
+            </div>
+        </section>
+
+        <section id="aktivitetsdiagram" class="animation_opg">
+            <div class="sectionwrapper">
+                <div class="col">
+                    <h1>Aktivitetsdiagram</h1>
+                    <p>Et aktivitetsdiagram er en visuel opstilling af hvordan man ønsker spillet skal fungere. Her illustreres det hvilke elementer spilleren skal have mulighed for at klikke på og hvad der skal ske når der klikkes, fx point, liv, animationer eller en lyd. I mit diagram kan man se at der i mit spil er 2 typer af klikbare elementer gode, der giver point, og dårlige, hvor man mister liv. Desuden er der en timer, der afslutter spillet efter 30 sek. Man taber både hvis tiden løber ud eller man mister alle sine liv. </p>
+                </div>
+                <div class="col">
+                    <img src="eksempler/animation/animation_aktivitetsdiagram.png" alt="Spillets aktivitetsdiagram">
+                </div>
+            </div>
+        </section>
+
+        <section id="state_machine_diagram" class="animation_opg">
+            <div class="sectionwrapper">
+                <div class="col">
+                    <h1>State machine diagram</h1>
+                    <p>Et state machine diagram er på en måde en opskrift til hvordan spillet skal kodes. I et state machine diagram er alle funktionerne, man senere laver med JavaScript, illustreret og relationerne mellem dem er tydeliggjort. State machine diagrammet er essentielt når man begynder at kode, da man starter med at sætte funktionerne fra diagrammet ind og derefter skriver noter om hvad der skal ske ud fra diagrammet. På den måde har man overblik over kodningen.</p>
+                </div>
+                <div class="col">
+                    <img src="eksempler/animation/animation_state_machine.png" alt="Spillets state machine diagram">
+                </div>
+            </div>
+        </section>
+
+        <section id="css" class="animation_opg">
+            <div class="sectionwrapper">
+                <div class="col">
+                    <h1>CSS animation</h1>
+                    <p>Vi blev introduceret til css animationer, hvilket er en måde man kan få html elementer til at bevæge sig på skærmen. Animationerne vil senere blive styret af JavaScript. Et eksempel på en animation jeg brugte i mit spil, er denne ”shrink_kf” er for timeren øverst på spilskærmen. Først laver man selve animationen, hvilket er den del der starter med ”@keyframes”. Animationen er inddelt i 3 0% der er starten, 50% der er halvvejs og 100% der er slutningen. Det er kommandoen ”transform: scaleX” der får timeren til at gå ned, 1 er helt ude og 0 er væk. ”border-radius” bestemmer kanterne, som er afrundede og ”background-color” for timeren til at skifte fra grøn til rød. <br> Disse kommandoer udgør selve animationen, men der sker ikke noget før animationen er tilføjet til et element. For at animationen let kan tilføjes og fjernes fra elementer tildeles den til en klasse, i dette tilfælde ”.shrink” her definere jeg først hvilken animation man ønsker at tilføje. Herefter definerer jeg hvor lang tid animationen skal køre, dette er også den tid man har til at spille, her er det 30 sek. Jeg definerer at animationen kun skal køre en gang. Derefter benyttes ”ease-out” til at få den til at køre i et mere behageligt tempo.</p>
+                    <img src="eksempler/animation/animation_timer.png" alt="Timeren fra spillet">
+                </div>
+                <div class="col">
+                    <img src="eksempler/animation/animation_css.png" alt="Eksempel på css kode">
+                </div>
+            </div>
+        </section>
+
+        <section id="js" class="animation_opg">
+            <div class="sectionwrapper">
+                <div class="col">
+                    <h1>JavaScript </h1>
+                    <p>Vi blev introduceret til Javascript og lærte selvfølgelig de grundlæggende kommandoer, der gør det muligt at klikke på elementer eller starte animationer når andre ting er færdige. Her vil jeg dog prøve at tage udgangspunkt i noget af det mere avancerede JavaScript fra mit spil. Mit spil er en smule kompliceret fordi de forskellige fisk har forskellige animationer og giver forskellige point, derfor er mit spil hovedsageligt baseret på ”if” sætninger, der søger efter elementernes id’er. Eksemplet er et udsnit funktionen ”fiskReset()” der bruges til at genstarte fiskene efter en spiller har trykket på dem, eller deres animation er blevet færdig. Her kan man se at hele funktionen er skrevet som en lang ”if” sætning, der først undersøger hvilken fisk den arbejder med ud fra fiskenes id. Når man vil resette, er det vigtigt at man først fjerner alle de ”classes” der er blevet tilføjet. Da jeg i mit spil får fiskene til at komme frem på forskellige positioner hver gang skal jeg også fjerne alle de mulige positioner. Derefter tildeler jeg fisken en ny position med en ”math.random” denne virker ved at den genererer et tal mellem 0 og 1, hvor 0 indgår men 1 ikke gør. Da jeg har 5 positioner, ønsker jeg et tal mellem 1 og 5 og derfor ganger jeg først med 4 og lægger derefter 1 til. Det eneste der stadig skal tages højde for er math.random genererer et kommatal for at undgå dette sætter jeg en math.floor på. Det genererede tal tilføjes til min ”pos_”, hvilket gør den til en af de mulige positions classes. </p>
+                </div>
+                <div class="col">
+                    <img src="eksempler/animation/animation_js_if_id.png" alt="Eksempel på JavaScript kode">
+                </div>
+            </div>
+        </section>
+
+        <section id="link" class="animation_opg">
+            <a href="https://neanderpetersen.dk/kea/04_animation/spil/index.html" target="_blank">Link til spillet</a>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

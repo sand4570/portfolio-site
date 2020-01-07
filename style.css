@@ -1,0 +1,688 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 1rem;
+    max-width: 97vw;
+    border-radius: 15px;
+    margin: 0px auto 20px auto;
+}
+
+p {
+    font-family: "Times New Roman", "Times", "serif";
+}
+
+h1 {
+    font-family: "helvetica", "arial";
+}
+
+h2 {}
+
+/*******    Menu Slut   *******/
+
+header {
+    height: 100px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-group {
+    padding: 0.5rem 1rem 0.2rem 1rem;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 97vw;
+}
+
+.btn-group a {
+    font-size: 1rem;
+    border: none;
+    height: 40px;
+    width: 15.5vw;
+    border-radius: 15px;
+    margin: 0.5vw;
+    text-align: center;
+    padding-top: 11px;
+}
+
+#btn1 {
+    background-color: #FF9AA2;
+}
+
+#btn2 {
+    background-color: #FFB7B2;
+}
+
+#btn3 {
+    background-color: #FFDAC1;
+}
+
+#btn4 {
+    background-color: #E2F0CB;
+}
+
+#btn5 {
+    background-color: #B5EAD7;
+}
+
+#btn6 {
+    background-color: #C7CEEA;
+}
+
+.btn-group2 {
+    width: 100vw;
+    padding: 0.5rem 1rem 1rem 1rem;
+    top: 10px;
+    margin: 0 auto;
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1210px) {
+    .btn-group2 {
+        margin-left: 27vw;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .btn-group2 {
+        margin-left: 24vw;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .btn-group2 {
+        margin-left: 21vw;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .btn-group2 {
+        margin-left: 18vw;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .btn-group2 {
+        margin-left: 15vw;
+    }
+}
+
+.btn-group2 a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    border: none;
+    height: 20px;
+    width: 80px;
+    border-radius: 15px;
+    margin: 0px 1px 2px 2px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#btn2_1 {
+    background-color: #FFDAC1;
+}
+
+#btn2_2 {
+    background-color: #FFBE91;
+}
+
+#btn2_3 {
+    background-color: #FD9C59;
+}
+
+.btn-group3 {
+    width: 100vw;
+    padding: 0.5rem 1rem 1rem 1rem;
+    top: 10px;
+    margin: 0 auto;
+    margin-left: 46vw;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1130px) {
+    .btn-group3 {
+        margin-left: 43vw;
+    }
+}
+
+@media only screen and (max-width: 965px) {
+    .btn-group3 {
+        margin-left: 40vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .btn-group3 {
+        margin-left: 37vw;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .btn-group3 {
+        margin-left: 34vw;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .btn-group3 {
+        margin-left: 32vw;
+    }
+}
+
+.btn-group3 a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    border: none;
+    height: 20px;
+    width: 80px;
+    border-radius: 15px;
+    margin: 0px 1px 2px 2px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#btn3_1 {
+    background-color: #E2F0CB;
+}
+
+#btn3_2 {
+    background-color: #CEEF97;
+}
+
+#btn3_3 {
+    background-color: #B8F05B;
+}
+
+@media only screen and (max-width: 550px) {
+    .btn-group {
+        max-width: 120px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        flex-grow: 1;
+        flex-basis: 110px;
+        max-width: 120px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .btn-group a {
+        height: 25px;
+        width: 100px;
+        padding-top: 4px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        height: 192px;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .btn-group2 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 42px;
+        margin-left: 1px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .btn-group3 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 72px;
+        margin-left: 1px;
+        width: auto;
+    }
+}
+
+/*******    Menu Slut   *******/
+
+/*******    Forside   *******/
+
+#position {
+    padding-top: 110px;
+}
+
+@media only screen and (max-width: 550px) {
+    #position {
+        padding-top: 200px;
+    }
+}
+
+#splash_wrapper {
+}
+
+#splash {
+    max-width: 97vw;
+    margin-left: 4vw;
+}
+
+@media only screen and (max-width: 660px) {
+    #splash {
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #splash {
+        padding-top: 125px;
+    }
+}
+
+
+/*******    Forside Slut   *******/
+
+/*******    Web   *******/
+
+.web {
+    background-color: #FFB7B2;
+}
+
+.web .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.web .bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web .txt {
+    flex-grow: 1;
+    flex-basis: 250px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.web .image {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem
+}
+
+#indhold .sectionwrapper {
+    flex-direction: row-reverse;
+}
+
+/*******    Web Slut   *******/
+
+/*******    Ux_data   *******/
+
+.ux_data {
+    background-color: #FFDAC1;
+}
+
+.ux_data .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_data .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+@media screen and (max-width: 870px) {
+    .web #indhold .col {
+        flex-direction: row-reverse;
+    }
+}
+
+/*******    Ux_data Slut   *******/
+
+/*******    ux_prototype   *******/
+
+.ux_prototype {
+    background-color: #FFBE91;
+}
+
+.ux_prototype .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_prototype .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.ux_prototype .col_wide {
+    flex-grow: 1;
+    flex-basis: 600px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.ux_prototype .col_narrow {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+/*******    ux_prototype Slut   *******/
+
+/*******    ux_sprint   *******/
+
+.ux_sprint {
+    background-color: #FD9C59;
+}
+
+.ux_sprint .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_sprint .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.ux_sprint .col_wide {
+    flex-grow: 1;
+    flex-basis: 600px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_sprint .col_narrow {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.ux_sprint .col_2 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.ux_sprint .bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_sprint .top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_sprint .col_3 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.ux_sprint .col_wide_2 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ux_sprint .col_narrow_2 {
+    flex-grow: 1;
+    flex-basis: 100px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+#sketch .sectionwrapper {
+    flex-direction: row-reverse;
+}
+
+/*******    ux_sprint Slut   *******/
+
+/*******    animation_assets   *******/
+
+.animation_assets {
+    background-color: #E2F0CB;
+}
+
+.animation_assets .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animation_assets .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.animation_assets .col_2 {
+    flex-grow: 1;
+    flex-basis: 250px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 15px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    height: 40px;
+    padding: 5px;
+    background-color: #CEEF97;
+    border: 1px solid black;
+}
+
+td {
+    height: 25px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#filformater .sectionwrapper {
+    flex-direction: row-reverse;
+}
+
+/*******    animation_assets Slut   *******/
+
+/*******    animation_opg   *******/
+
+.animation_opg {
+    background-color: #CEEF97;
+}
+
+.animation_opg .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animation_opg .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+/*******    animation_opg Slut   *******/
+
+/*******    animation_billeddeling   *******/
+
+.animation_billeddeling {
+    background-color: #B8F05B;
+}
+
+.animation_billeddeling .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animation_billeddeling .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.animation_billeddeling .wrap_2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animation_billeddeling .col_image {
+    flex-grow: 1;
+    flex-basis: 70px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+#aktivitetsdiagram .sectionwrapper {
+    flex-direction: row-reverse;
+}
+
+#css .sectionwrapper {
+    flex-direction: row-reverse;
+}
+
+/*******    animation_billeddeling Slut   *******/
+
+/*******    indhol_pilotvideo   *******/
+
+.indhold_pilotvideo {
+    background-color: #B5EAD7;
+}
+
+/*******    indhol_pilotvideo Slut   *******/
+
+/*******    indhol_redesign   *******/
+
+.indhold_redesign {
+    background-color: #8BEAC8;
+}
+
+.indhold_redesign .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.indhold_redesign .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.indhold_redesign .col_image {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.indhold_redesign .col_wide {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+.indhold_redesign .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+#hjemmeside .sectionwrapper {
+    flex-direction: row-reverse;
+}
+
+/*******    indhol_redesign Slut   *******/
+
+/*******    OM   *******/
+
+.om {
+    background-color: #C7CEEA;
+}
+
+.om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.om .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.om .col_wide {
+    flex-grow: 1;
+    flex-basis: 600px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.om .col_narrow {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.2rem;
+}
+
+/*******    OM Slut   *******/
